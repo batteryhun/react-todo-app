@@ -10,7 +10,7 @@ function ToDo({ text, category, id }: IToDo) {
     setToDos((oldToDos) => {
       const targetIndex = oldToDos.findIndex((toDo) => toDo.id === id);
       const oldToDo = oldToDos[targetIndex];
-      const newToDo = { text, id, category: "name" };
+      const newToDo = { text, id, category: name };
       return oldToDos;
     });
   };
